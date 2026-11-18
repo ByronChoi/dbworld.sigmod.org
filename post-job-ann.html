@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+    
+
+<TITLE>DBWorld Post: Job Announcement</TITLE>
+
+</HEAD>
+<BODY>
+
+
+<H2><img src="dbworld.svg" align="center">
+  DBWorld Post: Job Announcement
+</H2>
+
+<font color="red">Please post only job announcements that are relevant to the database research community.
+    Please do not post resume or job inquiry on this mailing list. 
+    Thank you.</font><br><br>
+
+
+
+<FORM ACTION="cgi-bin/post-message.cgi"
+   METHOD="POST" ENCTYPE="multipart/form-data">
+
+<INPUT TYPE="HIDDEN" NAME="message_type" 
+ VALUE="job/announcement">
+
+<TABLE WIDTH="100%" BORDER=1>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT WIDTH="30%">
+Email address </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="email" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+DBWorld password </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="PASSWORD" NAME="password" MAXLENGTH=100 SIZE=10></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Type </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="RADIO" NAME="topic" VALUE="academic job"> Academic
+<INPUT TYPE="RADIO" NAME="topic" VALUE="industry job"> Industry
+<INPUT TYPE="RADIO" NAME="topic" VALUE="other job"> Other
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Organization </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="org" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Location </TD>
+<TD ALIGN=LEFT>
+City, State <INPUT TYPE="TEXT" NAME="city_state" MAXLENGTH=100 SIZE=30>
+<BR>
+Country <INPUT TYPE="TEXT" NAME="country" MAXLENGTH=100 SIZE=30>
+ <SELECT NAME="continent"> 
+                <OPTION> Africa
+                <OPTION SELECTED> N. America
+                <OPTION> S. America
+                <OPTION> Asia
+                <OPTION> Australia
+                <OPTION> Europe
+          </SELECT> 
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Web page (optional)</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="web_page" MAXLENGTH=500 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Deadline</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="deadline_day" MAXLENGTH=2 SIZE=2>
+<SELECT NAME="deadline_month"> 
+                <OPTION> Jan
+                <OPTION> Feb
+                <OPTION> Mar
+                <OPTION> Apr
+                <OPTION> May
+                <OPTION> Jun
+                <OPTION> Jul
+                <OPTION> Aug
+                <OPTION> Sep
+                <OPTION> Oct
+                <OPTION> Nov
+                <OPTION> Dec
+          </SELECT> 
+<INPUT TYPE="TEXT" NAME="deadline_year" MAXLENGTH=4 SIZE=4 VALUE="2000">
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message subject <BR>(do not add 'DBWorld')</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="subject" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message content type (ONLY plain text or html!)</TD>
+<TD ALIGN=LEFT>
+<!--<font color=red><em>Attention:</em> only plain text or html.
+If you post as RTF (rich text format), the text will show up garbled,
+like this: <code>{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fnil\fcharset0 Calibri;}</code>&hellip;</font>
+<BR>-->
+<SELECT NAME="message_content_type"> 
+  <OPTION VALUE="text/plain"> Plain Text
+  <OPTION VALUE="text/html">  HTML
+</SELECT> 
+<font color=red>Please prepare your message in a .txt file (recommended) or a .html file.
+    If you prefer html, please note that your html file may contain formatting code
+    that may not show up properly.</font>
+</TD>
+</TR>
+
+<!-- Removed due to Perl 5 upgrade by ACM 
+<TR ALIGN=MIDDLE> 
+<TD ALIGN=RIGHT>
+  <table border=0>
+	<tr>
+		<td>Anti-spam code</td> 
+		<td><img src="cgi-bin/genimg.pl"></td>
+	</tr>
+  </table>
+</TD>
+<TD ALIGN=LEFT><INPUT TYPE="TEXT" NAME="authImgCode" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+-->
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message file name (max 50KB file size; also, don't type in message itself):
+</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="file" NAME="message">
+</TD>
+</TR>
+
+</TABLE>
+<BR>
+
+
+<CENTER>
+<INPUT TYPE="submit" VALUE="Post Message">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</CENTER>
+
+</FORM>
+
+<!--
+<p>
+<center>
+ In addition to posting your job announcement to DBworld, you
+ can also submit it to <a href="http://www.acm.org/sigmod/dbjobs"
+ target=_blank><strong>dbjobs: the database of database
+ jobs</strong></a> for free.
+</center>
+<p>
+-->
+
+
+</BODY>
+</HTML>

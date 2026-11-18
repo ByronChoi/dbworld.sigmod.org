@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+    
+
+<TITLE>DBWorld Post: News</TITLE>
+
+</HEAD>
+<BODY>
+
+
+<H2><img src="dbworld.svg" align="center">
+  DBWorld Post: News
+</H2>
+
+<font color="red">Please post only news that is relevant to the database research community.
+        Posting news irrelevant to the database field can result in loss of posting privileges. Thank you.</font><br><br>
+
+
+
+<FORM ACTION="cgi-bin/post-message.postLimitByEmailNameCheck.cgi"
+   METHOD="POST" ENCTYPE="multipart/form-data">
+
+<INPUT TYPE="HIDDEN" NAME="message_type" 
+ VALUE="news">
+
+<TABLE WIDTH="100%" BORDER=1>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT WIDTH="30%">
+Email address </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="email" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+DBWorld password </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="PASSWORD" NAME="password" MAXLENGTH=100 SIZE=10></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Relevant to</TD>
+<TD ALIGN=LEFT>
+Country <INPUT TYPE="TEXT" NAME="country" MAXLENGTH=100 SIZE=30>
+ <SELECT NAME="continent"> 
+                <OPTION VALUE="" SELECTED> Everywhere/Multiple
+                <OPTION> Africa
+                <OPTION> N. America
+                <OPTION> S. America
+                <OPTION> Asia
+                <OPTION> Australia
+                <OPTION> Europe
+          </SELECT> 
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Web page (optional)</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="web_page" MAXLENGTH=500 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Deadline (optional)</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="deadline_day" MAXLENGTH=2 SIZE=2>
+<SELECT NAME="deadline_month"> 
+                <OPTION> Jan
+                <OPTION> Feb
+                <OPTION> Mar
+                <OPTION> Apr
+                <OPTION> May
+                <OPTION> Jun
+                <OPTION> Jul
+                <OPTION> Aug
+                <OPTION> Sep
+                <OPTION> Oct
+                <OPTION> Nov
+                <OPTION> Dec
+          </SELECT> 
+<INPUT TYPE="TEXT" NAME="deadline_year" MAXLENGTH=4 SIZE=4 VALUE="2000">
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message subject <BR>(do not add 'DBWorld')</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="subject" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message content type (ONLY plain text or html!)</TD>
+<TD ALIGN=LEFT>
+<SELECT NAME="message_content_type"> 
+  <OPTION VALUE="text/plain"> Plain Text
+  <OPTION VALUE="text/html">  HTML
+</SELECT> 
+</TD>
+</TR>
+
+<TR ALIGN=MIDDLE> 
+<TD ALIGN=RIGHT>
+  <table border=0>
+	<tr>
+		<td>Anti-spam code</td> 
+		<td><img src="cgi-bin/genimg.pl"></td>
+	</tr>
+  </table>
+</TD>
+<TD ALIGN=LEFT><INPUT TYPE="TEXT" NAME="authImgCode" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message file name (max 50KB file size; also, don't type in message itself):
+</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="file" NAME="message">
+</TD>
+</TR>
+
+</TABLE>
+<BR>
+
+
+<CENTER>
+<INPUT TYPE="submit" VALUE="Post Message">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</CENTER>
+
+</FORM>
+
+</BODY>
+</HTML>
