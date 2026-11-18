@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<TITLE>DBWorld Registration</TITLE>
+<!-- <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+ <link rel='stylesheet' href='css/dbworld.css'>
+ <link rel='stylesheet' href='css/table.css'> 
+-->
+ <!--<script src='https://www.google.com/recaptcha/api.js'></script> -->
+</HEAD>
+
+<BODY>
+
+<H1><img src="dbworld.svg" align="center"> DBWorld Registration</H1>
+
+Welcome to DBWorld! Please supply the following information. Upon
+completion of the form, the system will mail a password to you
+within a couple of minutes.  You can change the password or any of
+this information after you login. <P>
+Registration is a one-time event.  Subsequently you can post
+messages using your password. Please note that due to the number of
+spam registrations
+in the past, we no longer accept registrations from free email accounts,
+including Hotmail, Gmail and Yahoo Mail. Please use a non-free email
+account, and we apologize for any inconvenience this may cause.
+
+<FORM ACTION="cgi-bin/register.cgi"
+      METHOD="POST">
+
+<div class="noborder">
+<TABLE WIDTH="100%">
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT WIDTH="30%">
+Email Address </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="email" MAXLENGTH="50" SIZE="50"></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Phone Number (Optional) </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="phone_number" MAXLENGTH="100" SIZE="50"></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+First Name </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="first_name" MAXLENGTH="100" SIZE="50"></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Last Name </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="last_name" MAXLENGTH="100" SIZE="50"></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Name Suffix (e.g., Jr.) </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="name_suffix" MAXLENGTH="20" SIZE="20"></TD>
+</TR>
+
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Organization </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="org" MAXLENGTH="200" SIZE="50"></TD>
+
+<!--<TR>
+<TD>&nbsp;</TD>
+<TD ALIGN=LEFT>
+<div class="g-recaptcha" data-sitekey="6Lc0dnYUAAAAAAghRdK-x9D8P4kTw625Hj5mVcpM"></div>
+</TD>
+</TR>-->
+
+</TABLE>
+
+<BR><BR>
+The above information is complete and correct to the best of my
+knowledge. I understand that my privileges rely upon my not abusing
+this service, and that my privileges can be revoked at any time and
+for any reason by the site administrator. <br>
+
+<CENTER>
+<INPUT TYPE="submit" VALUE="I Agree">
+<INPUT TYPE="reset" VALUE="Reset">
+</CENTER>
+
+
+</FORM>
+
+
+
+</BODY>
+</HTML>

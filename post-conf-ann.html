@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+    
+
+<TITLE>DBWorld Post: Conference Announcement</TITLE>
+
+</HEAD>
+<BODY>
+
+
+<H2><img src="dbworld.svg" align="center">
+  DBWorld Post: Conference Announcement
+</H2>
+
+
+<font color="red">Please post only messages that are relevant to the database research community.
+    Posting inappropriate messages (e.g., CFPs for conferences not relevant to the
+    database field) can result in loss of posting privileges. Thank you.</font><br><br>
+
+<FORM ACTION="cgi-bin/post-message.cgi"
+   METHOD="POST" ENCTYPE="multipart/form-data">
+
+<INPUT TYPE="HIDDEN" NAME="message_type" 
+ VALUE="conference/announcement">
+
+<TABLE WIDTH="100%" BORDER=1>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT WIDTH="30%">
+Email address </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="email" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+DBWorld password </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="PASSWORD" NAME="password" MAXLENGTH=100 SIZE=10></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Conference short name <BR> (e.g., SIGMOD, VLDB) </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="name" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Conference start date </TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="start_date_day" MAXLENGTH=2 SIZE=2>
+<SELECT NAME="start_date_month"> 
+        <OPTION> Jan
+        <OPTION> Feb
+        <OPTION> Mar
+        <OPTION> Apr
+        <OPTION> May
+        <OPTION> Jun
+        <OPTION> Jul
+        <OPTION> Aug
+        <OPTION> Sep
+        <OPTION> Oct
+        <OPTION> Nov
+        <OPTION> Dec
+</SELECT> 
+<INPUT TYPE="TEXT" NAME="start_date_year" MAXLENGTH=4 SIZE=4 VALUE="2000">
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Conference location </TD>
+<TD ALIGN=LEFT>
+City, State <INPUT TYPE="TEXT" NAME="city_state" MAXLENGTH=100 SIZE=30>
+<BR>
+Country <INPUT TYPE="TEXT" NAME="country" MAXLENGTH=100 SIZE=30>
+ <SELECT NAME="continent"> 
+                <OPTION> Africa
+                <OPTION SELECTED> N. America
+                <OPTION> S. America
+                <OPTION> Asia
+                <OPTION> Australia
+                <OPTION> Europe
+          </SELECT> 
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Conference Web page (optional)</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="web_page" MAXLENGTH=500 SIZE=50></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Call for
+<BR><BR><BR>
+(comma separate Other entries)
+</TD>
+<TD ALIGN=LEFT>
+  <TABLE WIDTH="100%">
+  <TR VALIGN=TOP>
+    <TD>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_participation"> Participation <BR>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_papers"> Research Papers <BR>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_demos"> Research Demos <BR>
+    </TD><TD>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_exhibits"> Industrial Exhibits <BR>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_reports"> Industrial Reports <BR>
+      <INPUT TYPE="CHECKBOX" NAME="call_for_videos"> Videos
+    </TD>
+  </TR>
+  </TABLE>
+      Other <INPUT TYPE="TEXT" NAME="call_for_other" MAXLENGTH=100 SIZE=40>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+First deadline <BR> (e.g., abstracts)</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="deadline_day" MAXLENGTH=2 SIZE=2>
+<SELECT NAME="deadline_month"> 
+                <OPTION> Jan
+                <OPTION> Feb
+                <OPTION> Mar
+                <OPTION> Apr
+                <OPTION> May
+                <OPTION> Jun
+                <OPTION> Jul
+                <OPTION> Aug
+                <OPTION> Sep
+                <OPTION> Oct
+                <OPTION> Nov
+                <OPTION> Dec
+          </SELECT> 
+<INPUT TYPE="TEXT" NAME="deadline_year" MAXLENGTH=4 SIZE=4 VALUE="2000">
+</TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message subject <BR>(do not add 'DBWorld')</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="TEXT" NAME="subject" MAXLENGTH=100 SIZE=50><font color=red><font></TD>
+</TR>
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message content type (ONLY plain text or html!)</TD>
+<TD ALIGN=LEFT>
+<!--<font color=red><em>Attention:</em> only plain text or html.
+If you post as RTF (rich text format), the text will show up garbled,
+like this: <code>{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fnil\fcharset0 Calibri;}</code>&hellip;</font>
+<BR>-->
+<SELECT NAME="message_content_type"> 
+  <OPTION VALUE="text/plain"> Plain Text
+  <OPTION VALUE="text/html">  HTML
+</SELECT> 
+<font color=red>Please prepare your message in a .txt file (recommended) or a .html file.
+    If you prefer html, please note that your html file may contain formatting code
+    that may not show up properly.</font>
+</TD>
+</TR>
+
+<!-- Removed due to Perl 5 upgrade by ACM 
+<TR ALIGN=MIDDLE> 
+<TD ALIGN=RIGHT>
+<table border=0>
+	<tr>
+		<td>Anti-spam code</td> 
+		<td><img src="cgi-bin/genimg.pl"></td>
+	</tr>
+  </table>
+</TD>
+<TD ALIGN=LEFT><INPUT TYPE="TEXT" NAME="authImgCode" MAXLENGTH=100 SIZE=50></TD>
+</TR>
+-->
+
+<TR VALIGN=MIDDLE>
+<TD ALIGN=RIGHT>
+Message file name (max 50KB file size; also, don't type in message itself):
+</TD>
+<TD ALIGN=LEFT>
+<INPUT TYPE="file" NAME="message">
+</TD>
+</TR>
+
+</TABLE>
+<BR>
+
+
+<CENTER>
+<INPUT TYPE="submit" VALUE="Post Message">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</CENTER>
+
+</FORM>
+
+</BODY>
+</HTML>
