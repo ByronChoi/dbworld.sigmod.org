@@ -42,7 +42,7 @@
             <li><a${file === "index.html" ? ' class="active" aria-current="page"' : ""} href="index.html">Home</a></li>
             <li><a href="browse.html">Browse</a></li>
             <li><a href="register.html">Register</a></li>
-            <li><a${postActive ? ' class="active" aria-current="page"' : ""} href="post-dbworld.html">Post</a></li>
+            <li><a${postActive ? ' class="active" aria-current="page"' : ""} href="post.html">Post</a></li>
             <li><a${file === "faq.html" ? ' class="active" aria-current="page"' : ""} href="faq.html">FAQs</a></li>
           </ul>
         </nav>
@@ -75,7 +75,7 @@
           <li><a${file === "index.html" ? ' class="active" aria-current="page"' : ""} href="index.html">Home</a></li>
           <li><a href="browse.html">Browse messages</a></li>
           <li><a href="register.html">Register</a></li>
-          <li><a${postActive ? ' class="active" aria-current="page"' : ""} href="post-dbworld.html">Post a message</a></li>
+          <li><a${postActive ? ' class="active" aria-current="page"' : ""} href="post.html">Post a message</a></li>
           <li><a href="change-password.html">Change password</a></li>
           <li><a href="password-remind.html">Password reminder</a></li>
           <li><a${file === "faq.html" ? ' class="active" aria-current="page"' : ""} href="faq.html">FAQs</a></li>
@@ -91,7 +91,7 @@
       <div class="dbworld-wrap">
         <div class="dbworld-xfoot-in">
           <div><h2>About DBWorld</h2><p>DBWorld is a service for announcements and news of interest to the database research community.</p></div>
-          <div><h2>DBWorld</h2><ul><li><a href="browse.html">Browse</a></li><li><a href="register.html">Register</a></li><li><a href="post-dbworld.html">Post</a></li><li><a href="faq.html">FAQs</a></li></ul></div>
+          <div><h2>DBWorld</h2><ul><li><a href="browse.html">Browse</a></li><li><a href="register.html">Register</a></li><li><a href="post.html">Post</a></li><li><a href="faq.html">FAQs</a></li></ul></div>
           <div><h2>SIGMOD</h2><ul><li><a href="https://www.sigmod.org/">SIGMOD home</a></li><li><a href="https://www.sigmod.org/conferences/">Conferences</a></li><li><a href="https://www.sigmod.org/publications/">Publications</a></li></ul></div>
         </div>
         <div class="dbworld-xfoot-bottom"><span>&copy; ACM SIGMOD. DBWorld.</span><a href="mailto:dbworldmoderator@gmail.com">Contact moderators</a></div>
